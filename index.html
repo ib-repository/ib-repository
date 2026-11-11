@@ -1,8 +1,265 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IB Resource Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Open+Sans:wght@400;600;700&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>hey</h1>
-</bodu>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="#top">IB <span>Hub</span></a>
+    <nav aria-label="Main">
+      <ul class="nav">
+        <li><a href="#subjects">Subjects</a></li>
+        <li><a href="#qa">Q&amp;A</a></li>
+        <li><a href="#cas">CAS ideas</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#core">Core</a></li>
+        <li><a href="#dates">Dates</a></li>
+        <li><a href="#contribute">Contribute</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <h1>From students, to you</h1>
+      <p>Study guides, answered questions, and CAS ideas shared by students and teachers.</p>
+      <form class="search" role="search" onsubmit="return false">
+        <input type="search" placeholder="shhhhh this doesnt work dont tell anyone" aria-label="Search">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Q&A -->
+  <section id="qa">
+    <div class="wrap">
+      <h2>Questions and answers</h2>
+      <p class="lead">Can't find your question? Submit it using the form further down.</p>
+      <div class="filters" role="group" aria-label="Filter questions">
+        <button class="on">All</button><button>Exams</button><button>Internal assessments</button><button>Extended essay</button><button>TOK</button><button>University applications</button>
+      </div>
+
+      <details open>
+        <summary>How are IB diploma points calculated?</summary>
+        <div class="answer"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+      </details>
+      <details>
+        <summary>What is the difference between HL and SL?</summary>
+        <div class="answer"><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+      </details>
+      <details>
+        <summary>How do I choose an Extended Essay topic?</summary>
+        <div class="answer"><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p></div>
+      </details>
+      <details>
+        <summary>How many CAS hours do I need?</summary>
+        <div class="answer"><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p></div>
+      </details>
+      <details>
+        <summary>What happens if I fail a core component?</summary>
+        <div class="answer"><p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias.</p></div>
+      </details>
+      <details>
+        <summary>How should I manage my time across six subjects?</summary>
+        <div class="answer"><p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p></div>
+      </details>
+      <details>
+        <summary>Do universities care about predicted grades?</summary>
+        <div class="answer"><p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p></div>
+      </details>
+      <details>
+        <summary>How do I write a strong internal assessment?</summary>
+        <div class="answer"><p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est.</p></div>
+      </details>
+    </div>
+  </section>
+
+  <!-- CAS -->
+  <section id="cas">
+    <div class="wrap">
+      <h2>CAS and volunteering ideas</h2>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ideas organised by strand, with notes on time and learning outcomes.</p>
+      <div class="grid g3">
+        <div class="cas-col c">
+          <h3>Creativity</h3>
+          <div class="card"><ul>
+            <li><strong>Start a school zine</strong>Lorem ipsum dolor sit amet. <span class="tag">Ongoing</span></li>
+            <li><strong>Mural for a local wall</strong>Consectetur adipiscing elit. <span class="tag">Group</span></li>
+            <li><strong>Learn an instrument</strong>Sed do eiusmod tempor. <span class="tag">Solo</span></li>
+            <li><strong>Short film project</strong>Ut labore et dolore magna. <span class="tag">Group</span></li>
+            <li><strong>Coding a small game</strong>Quis nostrud exercitation. <span class="tag">Solo</span></li>
+          </ul></div>
+        </div>
+        <div class="cas-col a">
+          <h3>Activity</h3>
+          <div class="card"><ul>
+            <li><strong>Join a community sports league</strong>Lorem ipsum dolor sit amet. <span class="tag">Ongoing</span></li>
+            <li><strong>Train for a 10K</strong>Consectetur adipiscing elit. <span class="tag">Solo</span></li>
+            <li><strong>Weekend hiking club</strong>Sed do eiusmod tempor. <span class="tag">Group</span></li>
+            <li><strong>Learn a martial art</strong>Ut labore et dolore magna. <span class="tag">Ongoing</span></li>
+            <li><strong>Lunchtime yoga session</strong>Quis nostrud exercitation. <span class="tag">Group</span></li>
+          </ul></div>
+        </div>
+        <div class="cas-col s">
+          <h3>Service</h3>
+          <div class="card"><ul>
+            <li><strong>Tutor younger students</strong>Lorem ipsum dolor sit amet. <span class="tag">Ongoing</span></li>
+            <li><strong>Food bank volunteering</strong>Consectetur adipiscing elit. <span class="tag">Group</span></li>
+            <li><strong>Beach or park clean-up</strong>Sed do eiusmod tempor. <span class="tag">One-off</span></li>
+            <li><strong>Animal shelter helper</strong>Ut labore et dolore magna. <span class="tag">Ongoing</span></li>
+            <li><strong>Senior centre visits</strong>Quis nostrud exercitation. <span class="tag">Ongoing</span></li>
+          </ul></div>
+        </div>
+      </div>
+      <h3 style="margin-top:2.5rem">CAS project spotlight</h3>
+      <div class="grid g2" style="margin-top:1rem">
+        <article class="card"><h3>This</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Describe what the team did, what they learned, and how it met the learning outcomes.</p><p class="meta">Strands: C, A, S &nbsp;|&nbsp; Duration: 00 weeks</p></article>
+        </div>
+    </div>
+  </section>
+
+  <!-- RESOURCES -->
+  <section id="resources">
+    <div class="wrap">
+      <h2>Educational resources</h2>
+      <p class="lead">Notes, past papers, videos, and tools. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Resource</th><th>Subject</th><th>Type</th><th>Level</th><th>Link</th></tr></thead>
+          <tbody>
+            <tr><td>Resource title placeholder</td><td>Biology</td><td>Study notes</td><td>HL / SL</td><td><a href="#">Open</a></td></tr>
+            <tr><td>Resource title placeholder</td><td>Mathematics AA</td><td>Past papers</td><td>HL</td><td><a href="#">Open</a></td></tr>
+            <tr><td>Resource title placeholder</td><td>History</td><td>Essay examples</td><td>HL / SL</td><td><a href="#">Open</a></td></tr>
+            <tr><td>Resource title placeholder</td><td>Chemistry</td><td>Video series</td><td>SL</td><td><a href="#">Open</a></td></tr>
+            <tr><td>Resource title placeholder</td><td>English A</td><td>Annotated texts</td><td>HL / SL</td><td><a href="#">Open</a></td></tr>
+            <tr><td>Resource title placeholder</td><td>Economics</td><td>Flashcards</td><td>HL / SL</td><td><a href="#">Open</a></td></tr>
+            <tr><td>Resource title placeholder</td><td>Physics</td><td>Formula sheet</td><td>HL</td><td><a href="#">Open</a></td></tr>
+            <tr><td>Resource title placeholder</td><td>Spanish B</td><td>Vocabulary lists</td><td>SL</td><td><a href="#">Open</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 style="margin-top:2.5rem">Study tools and tips</h3>
+      <div class="grid g3" style="margin-top:1rem">
+        <article class="card"><h3>Revision planners</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p><a class="more" href="#">Browse planners</a></article>
+        <article class="card"><h3>Study techniques</h3><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p><a class="more" href="#">Read tips</a></article>
+        <article class="card"><h3>Wellbeing and stress</h3><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p><a class="more" href="#">Read more</a></article>
+        <article class="card"><h3>Command terms</h3><p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p><a class="more" href="#">See glossary</a></article>
+        <article class="card"><h3>Grade boundaries</h3><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p><a class="more" href="#">View boundaries</a></article>
+        <article class="card"><h3>Recommended websites</h3><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p><a class="more" href="#">See list</a></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBJECTS -->
+  <section id="subjects">
+    <div class="wrap">
+      <h2>Browse by subject group</h2>
+      <p class="lead">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pick a group to see notes, past papers, and tips.</p>
+      <div class="grid g3">
+        <article class="card group-card">
+          <h3>Studies in language and literature</h3>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          <ul><li>English A: Literature</li><li>English A: Language and Literature</li><li>Other Language A</li></ul>
+          <a class="more" href="#">View resources</a>
+        </article>
+        <article class="card group-card">
+          <h3>Language acquisition</h3>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+          <ul><li>Spanish B</li><li>French B</li><li>Language ab initio</li></ul>
+          <a class="more" href="#">View resources</a>
+        </article>
+        <article class="card group-card">
+          <h3>Individuals and societies</h3>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+          <ul><li>History</li><li>Economics</li><li>Psychology</li><li>Geography</li></ul>
+          <a class="more" href="#">View resources</a>
+        </article>
+        <article class="card group-card">
+          <h3>Sciences</h3>
+          <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit.</p>
+          <ul><li>Biology</li><li>Chemistry</li><li>Physics</li><li>Computer Science</li></ul>
+          <a class="more" href="#">View resources</a>
+        </article>
+        <article class="card group-card">
+          <h3>Mathematics</h3>
+          <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
+          <ul><li>Analysis and Approaches</li><li>Applications and Interpretation</li></ul>
+          <a class="more" href="#">View resources</a>
+        </article>
+        <article class="card group-card">
+          <h3>The arts</h3>
+          <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit.</p>
+          <ul><li>Visual Arts</li><li>Music</li><li>Theatre</li><li>Film</li></ul>
+          <a class="more" href="#">View resources</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE haha undertakle-->
+  <section id="core">
+    <div class="wrap">
+      <h2>The diploma cores</h2>
+      <p class="lead">Guides and examples for the three core components. Lorem ipsum dolor sit amet.</p>
+      <div class="grid g3">
+        <article class="card"><h3>Extended Essay</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Choosing a topic, writing a research question, structuring the essay, and working with your supervisor.</p><a class="more" href="#">EE guides</a></article>
+        <article class="card"><h3>Theory of Knowledge</h3><p>Sed do eiusmod tempor incididunt ut labore. Areas of knowledge, ways of knowing, the exhibition, and the essay with sample prompts.</p><a class="more" href="#">TOK guides</a></article>
+        <article class="card"><h3>Creativity, Activity, Service</h3><p>Ut enim ad minim veniam, quis nostrud. Learning outcomes, reflection prompts, documenting experiences, and supervisor check-ins.</p><a class="more" href="#">CAS guides</a></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- DATES that i dont nEED-->
+  <section id="dates">
+    <div class="wrap">
+      <h2>Key dates and deadlines</h2>
+      <p class="lead">Placeholder timeline. Replace with the dates for your school and exam session.</p>
+      <ol class="timeline">
+        <li><strong>Month 00: Extended Essay topic approval</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+        <li><strong>Month 00: Internal assessment drafts due</strong><br>Sed do eiusmod tempor incididunt ut labore et dolore.</li>
+        <li><strong>Month 00: CAS interview</strong><br>Ut enim ad minim veniam, quis nostrud exercitation.</li>
+        <li><strong>Month 00: Mock exams</strong><br>Duis aute irure dolor in reprehenderit in voluptate.</li>
+        <li><strong>Month 00: Final exams begin</strong><br>Excepteur sint occaecat cupidatat non proident.</li>
+        <li><strong>Month 00: Results released</strong><br>Nemo enim ipsam voluptatem quia voluptas sit.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CONTRIBUTE please DO it-->
+  <section id="contribute" class="contribute">
+    <div class="wrap">
+      <h2>Contribute a resource or ask a question</h2>
+      <p class="lead">Lorem ipsum dolor sit amet. Submissions are reviewed before they appear on the site.</p>
+      <h3><a href="https://forms.gle/F5m6SgTqtsFLrgsP9">https://forms.gle/F5m6SgTqtsFLrgsP9</a></h3>
+    </div>
+  </section>
+
+</main>
+
+<!-- i dont need this -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="grid g3">
+      <div><h4>IB Hub</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A student-run resource project.</p></div>
+      <div><h4>Explore</h4><a href="#subjects">Subjects</a><a href="#qa">Q&amp;A</a><a href="#cas">CAS ideas</a><a href="#resources">Resources</a></div>
+      <div><h4>About</h4><a href="#">About this project</a><a href="#">Contact</a><a href="#">Privacy</a><a href="#">Credits</a></div>
+    </div>
+    <p class="fine">This site is an independent student project and is not affiliated with the International Baccalaureate Organization.</p>
+  </div>
+</footer>
+
+</body>
 </html>
