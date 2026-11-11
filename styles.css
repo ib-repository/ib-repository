@@ -125,6 +125,9 @@ tr:last-child td{border:0}
 .site-footer a{color:#b9cddb;display:block;text-decoration:none;padding:.15rem 0}
 .site-footer a:hover{color:var(--aqua-lt)}
 .fine{margin-top:2rem;padding-top:1.2rem;border-top:1px solid #274560;font-size:.82rem}
-
+body > footer > div > div > div:nth-child(3) > details{background:none;border:none;border-radius:0;margin-bottom:0;box-shadow:none;}
+body > footer > div > div > div:nth-child(3) > details > summary{font: var(--sans); padding: 0.15rem !important;}
+body > footer > div > div > div:nth-child(3) > details > summary::after{display:none;}
+body > footer > div > div > div:nth-child(3) > details > p{padding-left:15px;}
 @media (max-width:760px){.hero::after,.hero::before{display:none}section{padding:3rem 0}.hero{padding:3.5rem 0}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
